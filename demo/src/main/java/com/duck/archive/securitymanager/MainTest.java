@@ -1,6 +1,5 @@
-package com.duck;
+package com.duck.archive.securitymanager;
 
-import com.duck.archive.securitymanager.DangerousOperationItfc;
 import com.duck.common.utils.ClassLoadUtil;
 import com.duck.common.utils.PrintUtil;
 
@@ -13,7 +12,7 @@ import com.duck.common.utils.PrintUtil;
  * - 只指定policy文件：-Djava.security.policy="d:/tmp/mypolicy.policy"
  * - 既指定policy文件、又开启安全管理器：-Djava.security.manager -Djava.security.policy="d:/tmp/mypolicy.policy"
  */
-public class Main {
+public class MainTest {
     public static void main(String[] args) throws Exception {
         // - 通过反射获取outer.jar中的DangerousOperation类
         String outerJarPath = "d:/tmp/outer-1.0-SNAPSHOT.jar";
