@@ -14,4 +14,13 @@ public class PrintUtil {
         msg = msg.replace("{}", "%s");
         System.out.println(String.format(msg, args));
     }
+
+    /**
+     * 打印对象
+     *
+     * @param obj 对象
+     */
+    public static void println(Object obj) {
+        System.out.println(obj);
+    }
 }

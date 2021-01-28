@@ -1,0 +1,6 @@
+grant {
+    permission java.lang.RuntimePermission "setSecurityManager";
+    permission java.lang.RuntimePermission "createClassLoader";
+    permission java.io.FilePermission "d:/tmp/outer-1.0-SNAPSHOT.jar", "read";
+    permission java.io.FilePermission "D:/program/Git/usr/bin/touch.exe", "execute";
+};

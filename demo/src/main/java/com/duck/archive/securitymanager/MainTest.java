@@ -3,14 +3,16 @@ package com.duck.archive.securitymanager;
 import com.duck.common.utils.ClassLoadUtil;
 import com.duck.common.utils.PrintUtil;
 
+import java.io.File;
+
 /**
  * 测试Java安全管理器用法
  * <p>
  * 目标：仅对从外部加载的不可信代码开启安全管理器，对项目内的可信代码不开启安全管理器
  * <p>
  * 启动JVM安全管理器参数：
- * - 只指定policy文件：-Djava.security.policy="d:/tmp/mypolicy.policy"
- * - 既指定policy文件、又开启安全管理器：-Djava.security.manager -Djava.security.policy="d:/tmp/mypolicy.policy"
+ * - 只指定policy文件：-Djava.security.policy="demo/src/main/resources/policy/mypolicy.policy"
+ * - 既指定policy文件、又开启安全管理器：-Djava.security.manager -Djava.security.policy="demo/src/main/resources/policy/mypolicy.policy"
  */
 public class MainTest {
     public static void main(String[] args) throws Exception {
